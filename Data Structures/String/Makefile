@@ -30,7 +30,7 @@ DEP = $(OBJ:.o=.d)
 TESTOBJ = $(TESTSRC:.cpp=.o)
 TESTDEP = $(TESTOBJ:.o=.d)
 
-all : $(TARGET)
+all : test # $(TARGET)
 
 $(TARGET) : $(OBJ)
 	$(CXX) $(CXXFLAGS) $^ -o $@
